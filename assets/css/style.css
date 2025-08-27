@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
@@ -15,14 +16,15 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  border-bottom: 2px solid rgba(255,255,255,0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .search-box {
   margin-top: 10px;
 }
+
 .search-box input {
   padding: 10px;
   border-radius: 25px;
@@ -30,6 +32,7 @@ header {
   outline: none;
   width: 200px;
 }
+
 .search-box button {
   padding: 10px 15px;
   margin-left: 5px;
@@ -40,17 +43,18 @@ header {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .search-box button:hover {
   background: #ff6b81;
 }
 
-.name-edit{
-    color: white;
+.name-edit {
+  color: white;
 }
 
-.img-edit{
-    height: 450px;
-    width: 1300px;
+.img-edit {
+  height: 450px;
+  width: 1300px;
 }
 
 .grid {
@@ -59,22 +63,26 @@ header {
   gap: 20px;
   padding: 20px;
 }
+
 .movie-card {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   overflow: hidden;
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 .movie-card:hover {
   transform: scale(1.05);
 }
+
 .movie-card img {
   width: 100%;
   height: 270px;
   object-fit: cover;
 }
+
 .movie-card h3 {
   padding: 10px;
   font-size: 16px;
@@ -82,15 +90,17 @@ header {
 
 #movieDetails {
   padding: 20px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   margin: 20px;
 }
+
 #movieDetails img {
   max-width: 200px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
 .hidden {
   display: none;
 }
@@ -102,8 +112,10 @@ header {
 
 .text-overlay {
   position: absolute;
-  top: 20%;        /* distance from top */
-  left: 33%;        /* center horizontally */
+  top: 20%;
+  /* distance from top */
+  left: 33%;
+  /* center horizontally */
   transform: translateX(-50%);
   color: white;
   font-size: 20px;
@@ -112,45 +124,157 @@ header {
   border-radius: 5px;
 }
 
-    .image-container {
-      position: relative;
-      width: 100%;
-      height: 80vh;
-      overflow: hidden;
-    }
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
 
-    .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    .text-overlay h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
+.text-overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
 
-    .text-overlay h3 {
-      font-size: 1.5rem;
-    }
+.text-overlay h3 {
+  font-size: 1.5rem;
+}
 
-    
-    @media (max-width: 992px) {
-      .text-overlay h1 {
-        font-size: 2.2rem;
-      }
 
-      .text-overlay h3 {
-        font-size: 1.2rem;
-      }
-    }
+@media (max-width: 992px) {
+  .text-overlay h1 {
+    font-size: 2.2rem;
+  }
 
-    @media (max-width: 576px) {
-      .text-overlay h1 {
-        font-size: 1.5rem;
-      }
+  .text-overlay h3 {
+    font-size: 1.2rem;
+  }
+}
 
-      .text-overlay h3 {
-        font-size: 1rem;
-      }
-    }
+@media (max-width: 576px) {
+  .text-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-overlay h3 {
+    font-size: 1rem;
+  }
+}
+
+.film-card {
+  background-color: rgba(30, 29, 29, 0.662);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.main-film-font {
+  font-size: 25px;
+}
+
+.container {
+  color: #0f0f0f;
+}
+
+.section-title {
+  border-bottom: 2px solid rgba(237, 236, 240, 0.92);
+  color: white;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.main-img-edit {
+  margin-top: 15%;
+}
+
+.body-bgColor {
+  background-color: #e63140;
+}
+
+.forecast-card {
+  background-color: rgba(43, 42, 42, 0.662);
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+}
+
+.link-text {
+  text-decoration: none;
+}
+
+.main-bground {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: rgb(70, 68, 68);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.login-container input:focus {
+  border-color: #030407;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #090a0b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #09090b;
+}
+
+.login-container p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-container a {
+  color: #070808;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}

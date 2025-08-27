@@ -18,18 +18,17 @@
 </head>
 
 <body class="bg-light">
-
     <nav class="py-2 bg-body-tertiary border-bottom">
         <div class="container d-flex flex-wrap justify-content-between align-items-center">
             <ul class="nav">
                 <li class="nav-item"><a href="index.html" class="nav-link px-2 text-dark active">Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link px-2 text-dark">Categories</a></li>
+                <li class="nav-item"><a href="categories.html" class="nav-link px-2 text-dark">Categories</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link px-2 text-dark">About Us</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-dark">Contact Us</a></li>
 
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Login</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link px-2 text-dark">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -44,19 +43,132 @@
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="Search movies...">
                     <button class="btn btn-danger" id="searchBtn">🔍</button>
-                    <button class="btn btn-warning" id="randomBtn">🎲 Discover</button>
+                    <!-- <button class="btn btn-warning" id="randomBtn">🎲 Discover</button> -->
                 </div>
             </form>
         </div>
     </header>
+    <div class="body-bgColor">
+        <br><br>
+        <div class="film-card">
+            <div class="d-flex">
+                <div class="col-md-4 text-center">
+                    <img src="assets/images/m4.jpeg" class="main-img-edit" id="main-icon">
+                </div>
+                <div class="container col-md-8 text-white">
+                    <p id="film-name" class="main-film-font">777 Charlie</p>
+                    <div>
+                        <div>Year : <span id="year">2022</span></div><br>
+                        <div>Genre : <span id="genre">Adventure - Drama</span></div><br>
+                        <div>Director : <span id="director">Kiranraj K.</span></div><br>
+                        <div>Actors : <span id="actors">Charlie (Labrador dog), Rakshit Shetty (as Dharma), Sangeetha
+                                Sringeri, Raj B. Shetty, Danish Sait, Bobby Simha, Aniruddh Roy</span></div><br>
+                        <div>Plot : <span id="plot">Dharma is a lonely, negative factory worker living a monotonous
+                                life.
+                                One day, a stray Labrador puppy (Charlie) enters his world and gradually transforms it,
+                                sparking a profound bond and renewal of happiness.</span></div><br>
+                        <div>IMDB Rating : <span id="imdb_rate">Approximately 8.7 / 10</span></div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div>
+            <h4 class="section-title text-dark">To Download Movies</h4>
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-1">Leo</p>
+                        <img src="assets/images/rm1.jpeg" id="random-film-icon-1">
+                        <p id="random-film-year-1">2023</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-2">The Greatest of All Time</p>
+                        <img src="assets/images/rm2.jpeg" id="random-film-icon-2">
+                        <p id="random-film-year-2">2024</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-3">Jailer</p>
+                        <img src="assets/images/rm3.jpeg" id="random-film-icon-3">
+                        <p id="random-film-year-3">2023</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-4">Indian</p>
+                        <img src="assets/images/rm4.jpeg" id="random-film-icon-4">
+                        <p id="random-film-year-4">1996</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-5">Mudhalvan</p>
+                        <img src="assets/images/rm5.jpeg" id="random-film-icon-5">
+                        <p id="random-film-year-5">1999</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-6">Anniyan</p>
+                        <img src="assets/images/rm6.jpeg" id="random-film-icon-6">
+                        <p id="random-film-year-6">2005</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-7">Sivaji</p>
+                        <img src="assets/images/rm7.jpeg" id="random-film-icon-7">
+                        <p id="random-film-year-7">2007</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-8">Thuppakki</p>
+                        <img src="assets/images/rm8.jpeg" id="random-film-icon-8">
+                        <p id="random-film-year-8">2012</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-9">Vikram</p>
+                        <img src="assets/images/rm9.jpeg" id="random-film-icon-9">
+                        <p id="random-film-year-9">2022</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-10">Raatchasan</p>
+                        <img src="assets/images/rm10.jpeg" id="random-film-icon-10">
+                        <p id="random-film-year-10">2018</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-11">Kadaikutty Singam</p>
+                        <img src="assets/images/rm11.jpeg" id="random-film-icon-11">
+                        <p id="random-film-year-11">2018</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="forecast-card">
+                        <p id="random-film-name-12">Sarkar</p>
+                        <img src="assets/images/rm12.jpeg" id="random-film-icon-12">
+                        <p id="random-film-year-12">2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-    
     <!-- Footer -->
     <footer class="bg-dark text-white py-3 mt-4 border-top">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <p class="mb-2 mb-md-0">© 2025 Movie Explorer, Inc</p>
-            <h3 class="mb-2 mb-md-0">🎬 Movie Explorer</h3>
+            <p class="mb-2 mb-md-0 text-white">© 2025 Movie Explorer, Inc</p>
+            <h3 class="mb-2 mb-md-0 text-white">🎬 Movie Explorer</h3>
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
                 <li class="nav-item"><a href="" class="nav-link px-2 text-white">Categories</a></li>
@@ -65,6 +177,7 @@
             </ul>
         </div>
     </footer>
+
 
     <!-- Animation JS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
