@@ -34,10 +34,10 @@ const movieList = [
     "Joker", "Spider-Man", "Iron Man", "Shutter Island", "Gladiator",
     "Avatar", "Black Panther", "Doctor Strange", "Deadpool", "The Lion King",
     "Bigil", "The Shawshank Redemption", "Sinhaya", "Baahubali: The Beginning", "Baahubali 2: The Conclusion",
-    "Enthiran", "2.0", "Kabali","Kaala", "Vikram", 
+    "Enthiran", "2.0", "Kabali", "Kaala", "Vikram",
     "Master", "Leo", "Beast", "Jailer", "Mersal",
-    "Bigil", "Thuppakki", "Sarkar", "Indian","Anniyan",
-    "Sivaji","Ponniyin Selvan: Part One","Ponniyin Selvan: Part Two", "The Greatest of All Time", "Mudhalvan",
+    "Bigil", "Thuppakki", "Sarkar", "Indian", "Anniyan",
+    "Sivaji", "Ponniyin Selvan: Part One", "Ponniyin Selvan: Part Two", "The Greatest of All Time", "Mudhalvan",
     "Raatchasan", "Kadaikutty Singam"
 ];
 
@@ -55,27 +55,29 @@ function displayRandomMovies() {
             .then(data => {
                 if (data.Response === "True") {
                     document.getElementById(`random-film-name-${index + 1}`).innerText = data.Title || "-";
-                    document.getElementById(`random-film-icon-${index + 1}`).src = data.Poster || "assets/images/default.jpg";
+                    document.getElementById(`random-film-icon-${index + 1}`).src =(data.Poster && data.Poster !== "N/A") ? data.Poster : "assets/images/default.jpg";
                     document.getElementById(`random-film-year-${index + 1}`).innerText = data.Year || "-";
 
-                    //   const downloadBtn = document.getElementById(`download-btn-${index + 1}`);
-                    //   downloadBtn.onclick = () => downloadFilm(data.Title, data.Year, data.Poster);
+                    // const downloadBtn = document.getElementById(`download-btn-${index + 1}`);
+                    // if (downloadBtn) {  
+                    //     downloadBtn.onclick = () => downloadBtn(data.Title, data.Year, data.Poster);
+                    // }
                 }
             });
     });
 }
 
+// function downloadBtn(title, year, posterUrl) {
+//     const link = document.createElement("a");
+//     link.href = posterUrl && posterUrl !== "N/A" ? posterUrl : "assets/images/default.jpg";
+//     link.download = `${title}.jpg`;
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
 
-// function downloadFilm(title, year, posterUrl) {
-//   alert(`Downloading: ${title} (${year})`);
-
-
-//   const link = document.createElement("a");
-//   link.href = posterUrl;
-//   link.download = `${title}.jpg`; 
-//   document.body.appendChild(link);
-//   link.click();
-//   document.body.removeChild(link);
+//     alert(`${title} (${year}) Poster Downloaded!`);
 // }
+
+
 
 displayRandomMovies();
